@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='Type=text/html; charset=utf-8'>
+    <title>NIA's STacK</title>
+    <style>
+      body, div { background-color: black !important; }
+      .shell-like {
+        margin: 0;
+        color: #B2B2B2;
+        font-family: monospace, "Andale Mono", "Courier New";
+        font-size: 20px;
+      }
+      .shell-like .c32 { color: #18B218; }
+      .shell-like .c32_1m { color: #54FF54; font-weight: bold; }
+      .shell-like .c34_1m { color: #5454FF; font-weight: bold; }
+      .shell-like .c37_1m { color: white; font-weight: bold; }
+      .shell-like .c41 { background-color: #B21818; font-weight: bold; }
+      .shell-like input {
+        border: none;
+        background-color: black;
+        color: #B2B2B2;
+        font-family: monospace, "Andale Mono", "Courier New";
+        font-size: 20px;
+        padding: 0;
+        width: 700px;
+      }
+      .shell-like input:focus { outline: none; }
+      #aboutme-wrapper { max-width: 1200px; }
+      .aboutme-text { color: white; }
+      #after { display: none; }
+    </style>
+    <script>
+      window.onload = function() {
+          document.getElementById('after').style.display = 'block';
+          document.getElementById('focused').focus();
+      }
+    </script>
+  </head>
+  <body>
+    <pre class="shell-like">
+Linux campus 2.6.26-2-openvz-amd64 #1 SMP Wed Sep 21 04:25:23 UTC 2011 x86_64
+
+<span class="c37_1m">Welcome to NIA's STacK of technologies <span class="c41">(UNDER CONSTRUCTION)</span></span>
+
+<span class="c37_1m">This stack is currently empty.There is nothing to pop from here.</span>
+<span class="c37_1m">If you want to push someting to me, push any &#x25A2; button below!</span>
+
+<span class="c34_1m">[~]</span> <span class="c32_1m">nia@n14s.tk</span>$ whoami
+
+Hey, I know that `whoami` should simply show `nia` in this case.
+But let me not be a Capitain Obvious and show some more info!
+
+ - Yours, whoami
+
+Starting super-duper graphical terminal mode:                        [  <span class="c32">OK</span>  ]
+Making use of solar energy for brighter colors:                      [  <span class="c32">OK</span>  ]
+Bringing up FantasticEthernet 1 Tbs network:                         [  <span class="c32">OK</span>  ]
+Connecting to about.me/moonlighter:                                  [  <span class="c32">OK</span>  ] </pre>
+    <div id="aboutme-wrapper">
+      <script src="http://about.me/embed/moonlighter?bio=0"></script>
+    </div>
+    <pre class="shell-like" id="after"><span class="c34_1m">[~]</span> <span class="c32_1m">nia@n14s.tk</span>$ <input id="focused" type="text"></pre>
+  </body>
+</html>
+
